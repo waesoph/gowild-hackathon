@@ -1,0 +1,15 @@
+@use "./partials/typography";
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  @include marginblock;
+}
+
+body {
+  margin: 0;
+  font-family: "Titillium Web", "Times New Roman", serif;
+}

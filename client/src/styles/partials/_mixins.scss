@@ -1,0 +1,20 @@
+@use "./variables" as *;
+
+// Media type
+@mixin tablet {
+  @media (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+//Marginblock
+@mixin marginblock($margin-end: 0) {
+    margin-block-start: $margin-end;
+    margin-block-end: $margin-end;
+  }
