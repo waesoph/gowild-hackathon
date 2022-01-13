@@ -1,0 +1,23 @@
+[
+    {
+        "id": "66ebf9f5-68a9-451c-a540-dee015bf9fde",
+        "item1": "2813fed0-6111-4d1a-9d1d-ac445581a324",
+        "item2": "b3bb0b3a-0577-4807-8d03-d336ba6b0953",
+        "item3": "b81177d2-49c9-4925-b830-67b3e08125d5",
+        "title": "Movie Night"
+    },
+    {
+        "id": "e40d7101-1705-488b-9d64-23c6aa654dc7",
+        "item1": "0859c47d-0a23-41a3-bcb8-dd790ba0e3dd",
+        "item2": "a9495b58-76aa-4f88-8978-b8fddb6c9689",
+        "item3": "b81167d1-49c9-4925-b830-67b3e98005d5",
+        "title": "Game Night"
+    },
+    {
+        "id": "dd0b5561-111a-49c5-8eca-7f3389b6925e",
+        "item1": "e1a8516c-25b4-437d-8d9c-33f0cca0bb8d",
+        "item2": "ef1e5ccf-572c-491f-a54a-16e154e22a11",
+        "item3": "b81067d1-49c9-4925-b830-67b3e98005d5",
+        "title": "Spa Night"
+    }
+]
