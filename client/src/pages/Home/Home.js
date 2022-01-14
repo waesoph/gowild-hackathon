@@ -39,15 +39,14 @@ export default class Home extends Component {
 
         return (
             <div className="home">
-            <section>
-                <h1>Welcome to Go Wild</h1>
-                <p>The Remote Work Connection Builder.</p>
-                <p>Engage remote workers, new hires {'&'} current employees with your Company Culture!</p>
-                This is the home page
-                <Link to='/select'>Choose a box</Link>            
+            <section className="home__hero">
+                <h1 className="home__title">Welcome to <span className="home__logo">Go Wild</span></h1>
+                <p className="home__info">The Remote Work Connection Builder.</p>
+                <p className="home__info">Engage remote workers, new hires {'&'} current employees with your Company Culture!</p>
+                <Link className="home__button" to='/select'><p>Choose a box</p></Link>            
             </section>
-            <section>
-                <h2>Box of the week</h2>
+            <section className="week">
+                <h2 className="week__title">Box of the week</h2>
                 <DescriptiveBox
                 id={botw.id}
                 item1={botw.item1}
@@ -57,29 +56,38 @@ export default class Home extends Component {
                 description={botw.description} 
                  />
             </section>
-            <section>
-                <h2>Recently added</h2>
-                <div className="recent">
+            <section className="recent">
+                <h2 className="recent__title">Recently added</h2>
+                <div className="recent__container">
                 {this.state.products.map(product => (
-                  <div>
-                      <h3>{product.name}</h3>
-                      <img src={product.image} alt={product.name}/>
-                      <p>from {product.company_name}</p>
+                  <div className="recent__product">
+                      <h3 className="recent__name">{product.name}</h3>
+                      <img className="recent__image" src={product.image} alt={product.name}/>
+                      <p className="recent__company">from {product.company_name}</p>
                   </div>  
                 ))}
                 </div>
             </section>
-            <section>
-                <h2>Featured small business</h2>
+            <section className="featured">
+                <h2 className="featured__title">Featured small business</h2>
+                <div className="featured__container">
+                    <p className="featured__info">The newest <span className="featured__logo">Go Wild</span> food feature is "Food Truck" adventure. We have connected the coolest food truck experiences into one great Box. You will receive a selection of food, drinks, and desserts from Vancouver's sough-after, on wheels, gourmet adventures. We've matched this with Game Night!</p>
+                    <span className="featured__button">Read More</span>
+                </div>
+                <div className="featured__container">
+                    <p className="featured__info"><span className="featured__logo">Go Wild</span> is so excited to offer the "Cabaret Box"! An evening of entertainment accompanied with a charcuterie plate, and a bottle of bubbles. Enjoy a virtual evening of either music or live theatre! We've reserved the best seats in the house for your remote workforce!</p>
+                    <span className="featured__button">Read More</span>
+                </div>
+                <span className="featured__load">Load More</span>
             </section>
             <section className="about">
-                <h2>About us</h2>
+                <h2 className="about__title">About us</h2>
                 <div className="about__container">
-                <div className="about__half">
-                    <img className="about__image" src="https://i.kym-cdn.com/entries/icons/facebook/000/034/915/vibingcatttt.jpg" alt=""/>
+                <div className="about__bork">
+                    <h1 className="about__big">Go Wild</h1>
                 </div>
                 <div className="about__half">
-                    <p className="about__info">GoWild was the brain child of 5 BrainStation students, all very familiar with the challenges of studying and working remotely</p>
+                    <p className="about__inf"><span className="about__logo">GoWild</span> was the brain child of 5 BrainStation students, all very familiar with the challenges of studying and working remotely</p>
                     <p className="about__info">They realized the importance of maintaining a social connection with classmates, and discovered that having like-minded experience opened channels for easy conversations and connections.</p>
                     <p className="about__info">Go Wild builds experiences that create conversation and connections.</p>
                     <p className="about__info">Let us help you maintain your company culture.</p>
