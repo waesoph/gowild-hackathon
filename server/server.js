@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
-const productsRoute = require("./routes/products");
+const productsRoute = require('./routes/products');
 const boxesRoute = require("./routes/boxes");
 
 //Config
@@ -13,7 +13,7 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
-app.use("/products", productsRoute);
+app.use('/products', productsRoute);
 app.use("/boxes", boxesRoute);
 
 app.listen(port, () => {

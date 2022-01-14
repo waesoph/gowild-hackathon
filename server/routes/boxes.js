@@ -7,3 +7,5 @@ const readFile = () => {
   const boxesData = fs.readFileSync("./data/box.json");
   return JSON.parse(boxesData);
 };
+
+module.exports = router;
