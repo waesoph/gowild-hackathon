@@ -7,3 +7,19 @@ const readFile = () => {
   const productsData = fs.readFileSync("./data/products.json");
   return JSON.parse(productsData);
 };
+
+// Get list of all products
+router.get("/", (req, res) => {
+    let productsData = readFile();
+
+    return res.status(200).send(productsData);
+  });
+
+// Get list of all products
+router.get("/", (req, res) => {
+    let productsData = readFile();
+
+    return res.status(200).send(productsData);
+  });
+
+  module.exports = router;
