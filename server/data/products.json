@@ -1,0 +1,162 @@
+[
+    {
+        "id":"2813fed0-6111-4d1a-9d1d-ac445581a324",
+        "name":"Pizza",
+        "description":"a pepperoni pizza",
+        "category":"Food",
+        "quantity":10,
+        "image":"https://www.simplyrecipes.com/thmb/qu-AslBeskzh_HG9H0dQAmcrdLQ=/648x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+        "price": 25,
+        "company_name":"Wildcats"
+    },
+    {
+        "id":"b3bb0b3a-0577-4807-8d03-d336ba6b0953",
+        "name":"Sprite",
+        "description":"A yummy fizzy drink",
+        "category":"Drink",
+        "quantity":1000,
+        "image":"https://www.prairiedogbrewing.ca/wp-content/uploads/2020/06/Sprite-scaled-lg.jpg",
+        "price": 2,
+        "company_name":"Wildcats"
+    },
+    {
+        "id":"a9495b58-76aa-4f88-8978-b8fddb6c9689",
+        "name":"Secret Cocktail",
+        "description":"A special cocktail from our restaurant",
+        "category":"Drink",
+        "quantity":15,
+        "image":"https://content.hy-vee.com/remote.axd/3f4c2184e060ce99111b-f8c0985c8cb63a71df5cb7fd729edcab.ssl.cf2.rackcdn.com/media/15072/rainbowparadisecocktail.jpg?v=1&mode=crop&width=800&height=640&upscale=false",
+        "price": 5,
+        "company_name":"Bob's Burgers"
+    },
+    {
+        "id":"91eb04f9-f4cc-4d85-bcfb-6137b137e953",
+        "name":"Chocolate Milkshake",
+        "description":"Comes with all of the ingredients necessary to make our amazing chocolate milkshake from home!",
+        "category":"Drink",
+        "quantity":1520,
+        "image":"https://i2.wp.com/bakingmischief.com/wp-content/uploads/2019/07/chocolate-milkshake-image-1025x1536.jpg",
+        "price": 8,
+        "company_name":"Jethroes"
+    },
+    {
+        "id":"0859c47d-0a23-41a3-bcb8-dd790ba0e3dd",
+        "name":"Caramel Popcorn",
+        "description":"Made in Langford by my grandma!",
+        "category":"Food",
+        "quantity":1520,
+        "image":"https://i2.wp.com/lifemadesimplebakes.com/wp-content/uploads/2012/10/caramel-corn-resize-12-1097x1536.jpg",
+        "price": 6.50,
+        "company_name":"Jethroes"
+    },
+    {
+        "id":"1e932d7e-161d-4329-bdad-97f7790f6897",
+        "name":"Chef Video",
+        "description":"My grandma shows you how to make the milkshake",
+        "category":"Activity",
+        "quantity": 1520,
+        "image":"https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_teaser_image/iStock_000017593225XSmall_2_0.jpg",
+        "price": 100,
+        "company_name":"Jethroes"
+    },
+    {
+        "id":"ef1e5ccf-572c-491f-a54a-16e154e22a11",
+        "name":"Blue Buck",
+        "description":"The best bad beer to have ever existed.",
+        "category":"Drink",
+        "quantity": 420,
+        "image":"https://untappd.akamaized.net/site/beer_logos_hd/beer-19278_24cbc_hd.jpeg",
+        "price": 5,
+        "company_name":"Phillips"
+    },
+    {
+        "id":"ce357965-2ca7-4a38-932a-638d762a84f9",
+        "name":"Dark Dominion Lager",
+        "description":"I've never tried this beer before",
+        "category":"Drink",
+        "quantity": 5,
+        "image":"https://vibrewing.com/wp-content/uploads/2018/05/dominion-1.png",
+        "price": 8,
+        "company_name":"Vancouver Island Brewing"
+    },
+    {
+        "id":"e1a8516c-25b4-437d-8d9c-33f0cca0bb8d",
+        "name":"Butter Chicken",
+        "description":"A chicken covered in butter that you can make from home!",
+        "category":"Food",
+        "quantity": 520,
+        "image":"https://cafedelites.com/wp-content/uploads/2019/01/Butter-Chicken-IMAGE-64.jpg",
+        "price": 81,
+        "company_name":"Wildcats"
+    },
+    {
+        "id":"e2a3166b-a00c-45d4-8800-c102ac980f86",
+        "name":"Beef Jerky",
+        "description":"Chewy",
+        "category":"Food",
+        "quantity":1520,
+        "image":"https://www.bkhjerky.com/wp-content/uploads/2018/07/bkh_beef_jerky_original_flavour_2_2.jpg",
+        "price": 12,
+        "company_name":"BKH Jerky"
+    },
+    {
+        "id":"f984f1e9-0c88-4f98-9f8c-80cd48fe3cab",
+        "name":"McDouble",
+        "description":"ew but yum",
+        "category":"Food",
+        "quantity":1520000,
+        "image":"https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/hero/desktop/t-mcdonalds-McDouble.jpg",
+        "price": 2,
+        "company_name":"Mcdonalds"
+    },
+    {
+        "id":"b80067d1-49c9-4925-b830-67b3e98005d5",
+        "name":"Jenga",
+        "description":"Players take turns removing one block at a time from a tower constructed of 54 blocks. Each block removed is then placed on top of the tower, creating a progressively more unstable structure.",
+        "category":"Activity",
+        "quantity":"100",
+        "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT3XaEVY-yHjPc_gu_nKrFyflkFtXtF2X84rsHfVmERDmoKLUzJJFnQwu3WvfFtWM8ky8SG5Caf99bNJAG_7HZZCt904E-esQ",
+        "price":20,
+        "company_name":"Wildcats Games Ltd."
+    },
+    {
+        "id":"b81067d1-49c9-4925-b830-67b3e98005d5",
+        "name":"Relaxing care package",
+        "description":"Includes bath salts, body lotion, candle, face bar.",
+        "category":"Activity",
+        "quantity":"100",
+        "image":"https://images-na.ssl-images-amazon.com/images/I/81Gg7TQ2EsS.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "price":25,
+        "company_name":"Wildcats"
+    },
+    {
+        "id":"b81167d1-49c9-4925-b830-67b3e98005d5",
+        "name":"Blokus",
+        "description":"Blokus is a game of strategy, where each piece must touch another of the same color but can only do so at the corners. The goal is to get all 21 of your pieces on the board. ",
+        "category":"Activity",
+        "quantity":"100",
+        "image":"https://upload.wikimedia.org/wikipedia/en/a/a8/Blokus_board_game.jpg",
+        "price":25,
+        "company_name":"Wildcats"
+    },
+    {
+        "id":"b81177d2-49c9-4925-b830-67b3e08005d5",
+        "name":"Spider-Man: No Way Home",
+        "description":"Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man. ",
+        "category":"Activity",
+        "quantity":"100",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9IYXmaVb_rilBu_a3XQPaRfmnwrIruvKu-WUsgiPmltIyBCb-Ge3FKddw86sHTt2exjo&usqp=CAU",
+        "price":30,
+        "company_name":"Wildcats"
+    },
+    {
+        "id":"b81177d2-49c9-4925-b830-67b3e08125d5",
+        "name":"Dune",
+        "description":"Dune is a 2021 American epic science fiction film directed by Denis Villeneuve and written by Villeneuve, Jon Spaihts, and Eric Roth. ",
+        "category":"Activity",
+        "quantity":100,
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9IYXmaVb_rilBu_a3XQPaRfmnwrIruvKu-WUsgiPmltIyBCb-Ge3FKddw86sHTt2exjo&usqp=CAU",
+        "price":30,
+        "company_name":"Wildcats"
+    }
+]

@@ -1,0 +1,80 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 6rem;
+
+    &__tap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    &__title {
+        @include sectionheader;
+        color: $darkblue;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        margin-top: 2rem;
+    }
+
+    &__info {
+        @include copytextitalic;
+    }
+
+    &__button {
+        @include copytext;
+        display: flex;
+        text-decoration: none;
+        background-color: $blue;
+        box-shadow: 1px 3px 5px $darkblue;
+        border-radius: 4px;
+        color: $white;
+        height: 3.5rem;
+        width: 10em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        box-shadow: 1px 3px 5px $darkblue;
+        padding: 2rem 4rem;
+    }
+
+    &__container {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+    }
+
+    &__holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__category {
+        @include copytext;
+    }
+
+    &__name {
+        @include footertext;
+    }
+
+    &__image {
+        width: 9rem;
+        height: 9rem;
+        margin: 0.5rem 1rem;
+    }
+}

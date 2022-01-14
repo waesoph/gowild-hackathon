@@ -1,0 +1,63 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+    padding: 5rem 7.5rem;
+
+    &__logo {
+        text-decoration: none;
+        color: $darkblue;
+    }
+    
+    &__link {
+        @include copytext;
+        color: $darkblue;
+        width: 15rem;
+        text-align: right;
+
+        &--box {
+            background-image: url(../../assets/akar-icons_shipping-box-01.svg);
+            background-size: 2rem;
+            background-repeat: no-repeat;
+            background-position-x: 30%;
+            background-position-y: 10%;
+        }
+        &--stats {
+            background-image: url(../../assets/bi_bar-chart-line-fill.svg);
+            background-size: 2rem;
+            background-repeat: no-repeat;
+            background-position-x: 35%;
+            background-position-y: 100%;
+        }
+        &--cart {
+            background-image: url(../../assets/bytesize_cart.svg);
+            background-size: 2rem;
+            background-repeat: no-repeat;
+            background-position-x: 70%;
+            background-position-y: 35%;
+        }
+        &--login {
+            background-image: url(../../assets/Vector.svg);
+            background-size: 2rem;
+            background-repeat: no-repeat;
+            background-position-x: 60%;
+            background-position-y: 40%;
+        }
+    }
+
+    &__title {
+        @include logo;
+        @include sectionheader;
+        text-decoration: none;
+    }
+
+    &__nav {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+}
