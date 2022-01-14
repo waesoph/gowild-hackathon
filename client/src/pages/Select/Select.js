@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import './Select.scss'
 import Box from '../../components/Box/Box'
+import { Link } from 'react-router-dom'
 
 const {v4: uuid} = require('uuid');
 
@@ -42,6 +43,7 @@ export default class Select extends Component {
         this.setState({
             currentBox: box
         })
+        alert(`Box has been successfully added to your cart!`)
     }
    
     componentDidMount() {
@@ -71,11 +73,11 @@ export default class Select extends Component {
         if(!this.state.boxes || !this.state.products) return <p>Loading</p>
 
         const standardBoxes = this.state.boxes.slice(0, 3)
-        console.log('work', this.state.currentBox)
+        const surpriseDescription = 'This box is an adventure to tickle your taste buds. The Go Wild team has pulled out all the stops. Create an experience where the element of surprise is the conversation starter. Are you ready to take your team on a journey?'
         return (
             <div className="select">
-            <h1>Select your experience from the options below</h1>
-            <ul>
+            <h1 className="select__title">Select your experience from the options below</h1>
+            <ul className="select__list">
                 {standardBoxes.map(box => (
                     <>
                     <Box
@@ -83,6 +85,8 @@ export default class Select extends Component {
                     id={box.id}
                     isSelected={this.state.currentBox ? this.state.currentBox.id === box.id : false}
                     setSelected={this.setSelected}
+                    setrandomBox={this.randomBox}
+                    description={box.description}
                     item1={box.item1}
                     item2={box.item2}
                     item3={box.item3}
@@ -96,11 +100,19 @@ export default class Select extends Component {
                     key={uuid()}
                     id={uuid()}
                     item1={this.state.randomFood}
+                    setSelected={this.setSelected}
+                    setrandomBox={this.randomBox}
                     item2={this.state.randomDrink}
                     item3={this.state.randomActivity}
+                    description={surpriseDescription}
                     title='Surprize Box' 
                     />
-                    <button onClick={this.randomBox}>Surprise me / Randomize</button>                    
+                    {/* <button onClick={this.randomBox}>Surprise me / Randomize</button> */}
+                    <div className="select__cta">
+                        <Link className="select__customize" to={'/customize'}>Build my own</Link>
+                        <Link className="select__checkout" to={'/checkout'}>Next</Link>                    
+                    </div>                    
+                    
             </div>
         )
     }
