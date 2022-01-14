@@ -128,9 +128,23 @@
 
 .confrim-img-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 3rem;
   &__img {
     width: 40rem;
+    margin-bottom: 2rem;
   }
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  &__sm {
+    width: 40rem;
+  }
+}
+
+.checkout-logo {
+  @include logo;
 }

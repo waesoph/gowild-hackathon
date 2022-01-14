@@ -73,12 +73,15 @@ class CustomizePage extends Component {
         <div>
           <div className="customize-container">
             <div className="customize-container__intro">
-              <h2 className="customize-container__title">Game Night Box</h2>
+              <h2 className="customize-container__title">
+                Your Customized Box
+              </h2>
               <p className="customize-container__details">
                 This fun-filled event box is a great tool to increase engagement
                 while building new work connections. A fun combination of food,
                 drink, and an online game. Nothing brings the group together
-                more than food and laughter! The team is going to Go Wild!
+                more than food and laughter! The team is going to
+                <span className="customize-logo">Go Wild</span>! !
               </p>
             </div>
 

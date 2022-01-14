@@ -1,6 +1,7 @@
 //import React from "react";
 import "./CheckoutPage.scss";
 import checkoutImg from "../../assets/checkout.jpg";
+import smallBizImg from "../../assets/small-business.jpg";
 
 import React, { Component } from "react";
 
@@ -40,7 +41,8 @@ class CheckoutPage extends Component {
                 This fun-filled event box is a great tool to increase engagement
                 while building new work connections. A fun combination of food,
                 drink, and an online game. Nothing brings the group together
-                more than food and laughter! The team is going to Go Wild!
+                more than food and laughter! The team is going to{" "}
+                <span className="checkout-logo">Go Wild</span>!
               </p>
             </div>
             <div className="final-box__item">
@@ -113,6 +115,10 @@ class CheckoutPage extends Component {
           {this.state.clicked ? (
             <div className="confrim-img-box">
               <img className="confrim-img-box__img" src={checkoutImg} />
+              <p className="confrim-img-box__text">
+                ... and also, you just supported a local business!
+              </p>
+              <img className="confrim-img-box__sm" src={smallBizImg} />
             </div>
           ) : null}
         </div>
