@@ -8,6 +8,7 @@ export default class Box extends Component {
     }
 
     componentDidMount() {
+        if(!this.state.products)
         axios
         .get('http://localhost:8080/products')
         .then((response) => {
@@ -26,31 +27,35 @@ export default class Box extends Component {
 
 
     render() {
+        // if(!this.props.show) return null
         if(!this.state.products) return <p>Loading</p>
         console.log(this.state.products)
         console.log(this.props)
+
+        const propsID = this.props.id;
+        const defaultImg = 'https://img.buzzfeed.com/buzzfeed-static/static/2020-03/5/23/enhanced/25a67c968a0a/enhanced-262-1583449224-1.png?output-format=jpg&output-quality=auto'
 
         return (
             <div className="box">
                 <div className="box__top">
                     <h2>{this.props.title}</h2>
-                    <button>Select</button>
+                    <button onClick={()=>this.props.setSelected(this.props)}>Select</button>
                 </div>
                 <div className="box__main">
                     <div>
-                        <h3>{this.state.products[0].category}</h3>
-                        <h4>{this.state.products[0].name}</h4>
-                        <img className="box__image" src={this.state.products[0].image} alt={this.state.products[0].name}/>
+                        <h3>{this.state.products[0] ? this.state.products[0].category : 'Food'}</h3>
+                        <h4>{this.state.products[0] ? this.state.products[0].name : '?'}</h4>
+                        <img className="box__image" src={this.state.products[0] ? this.state.products[0].image : defaultImg } alt={this.state.products[0] ? this.state.products[0].image : ''}/>
                     </div>
                     <div>
-                        <h3>{this.state.products[1].category}</h3>
-                        <h4>{this.state.products[1].name}</h4>
-                        <img className="box__image" src={this.state.products[1].image} alt={this.state.products[0].name}/>
+                        <h3>{this.state.products[1] ? this.state.products[1].category : 'Drink'}</h3>
+                        <h4>{this.state.products[1] ? this.state.products[1].name : '?'}</h4>
+                        <img className="box__image" src={this.state.products[1] ? this.state.products[1].image : defaultImg } alt={this.state.products[0] ? this.state.products[0].image : ''}/>
                     </div>
                     <div>
-                        <h3>{this.state.products[2].category}</h3>
-                        <h4>{this.state.products[2].name}</h4>
-                        <img className="box__image" src={this.state.products[2].image} alt={this.state.products[0].name}/>
+                        <h3>{this.state.products[2] ? this.state.products[2].category : 'Activity'}</h3>
+                        <h4>{this.state.products[2] ? this.state.products[2].name : '?'}</h4>
+                        <img className="box__image" src={this.state.products[2] ? this.state.products[2].image : defaultImg } alt={this.state.products[0] ? this.state.products[0].image : ''}/>
                     </div>
                 </div>                
             </div>

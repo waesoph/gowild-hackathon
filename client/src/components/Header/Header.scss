@@ -1,8 +1,20 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .header {
     display: flex;
     justify-content: space-between;
     height: 6rem;
     align-items: center;
+    
+    &__link {
+        text-decoration: none;
+    }
+
+    &__title {
+        @include logo;
+        text-decoration: none;
+    }
 
     &__nav {
         display: flex;
