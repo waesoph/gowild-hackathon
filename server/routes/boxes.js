@@ -8,4 +8,11 @@ const readFile = () => {
   return JSON.parse(boxesData);
 };
 
+// Get list of all boxes
+router.get("/", (req, res) => {
+    let boxData = readFile();
+
+    return res.status(200).send(boxData);
+  });
+
 module.exports = router;

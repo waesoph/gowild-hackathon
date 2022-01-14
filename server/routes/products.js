@@ -8,7 +8,14 @@ const readFile = () => {
   return JSON.parse(productsData);
 };
 
-// Get list of all warehouses
+// Get list of all products
+router.get("/", (req, res) => {
+    let productsData = readFile();
+
+    return res.status(200).send(productsData);
+  });
+
+// Get list of all products
 router.get("/", (req, res) => {
     let productsData = readFile();
 

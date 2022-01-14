@@ -5,6 +5,7 @@ import axios from "axios";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Select from "./pages/Select/Select";
+import Footer from "./components/Footer/Footer";
 
 import "./styles/global.scss";
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" exact component={Home}/>
         <Route path="/select" exact component={Select}/>
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }
