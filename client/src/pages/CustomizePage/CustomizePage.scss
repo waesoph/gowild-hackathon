@@ -11,14 +11,16 @@
   justify-content: center;
   align-items: center;
   color: $darkblue;
+  font-size: 2rem;
 }
 
 .customize-container {
   border: 1px $darkblue solid;
   display: flex;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 12rem;
+  margin-right: 10rem;
   margin-bottom: 10rem;
+  width: 80%;
 
   &__intro {
     width: 50%;
@@ -28,6 +30,7 @@
   &__title {
     margin-bottom: 0.5rem;
     color: $darkblue;
+    font-size: 3rem;
   }
   &__details {
     color: $darkblue;

@@ -19,13 +19,13 @@ class CustomizePage extends Component {
         this.setState({
           productData: res.data,
           foodCategory: res.data.filter(
-            (product) => product.category === "Food"
+            (product) => product.category === "Eat"
           ),
           drinkCategory: res.data.filter(
             (product) => product.category === "Drink"
           ),
           activityCategory: res.data.filter(
-            (product) => product.category === "Activity"
+            (product) => product.category === "Play"
           ),
         });
       })
@@ -86,7 +86,7 @@ class CustomizePage extends Component {
               <form className="customize-form" onSubmit={this.handleSubmit}>
                 <div className="customize-box">
                   <div className="customize-box__option">
-                    <label htmlFor="food">Food</label>
+                    <label htmlFor="food">Eat</label>
                     {this.state.selectedProduct.food && (
                       <div>
                         <div className="">
