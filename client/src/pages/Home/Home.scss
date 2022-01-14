@@ -1,31 +1,224 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
 .home {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &__hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+        color: $darkblue;
+    }
+
+    &__info {
+        @include copytext;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    &__title {
+        @include pageheader;
+        margin-top: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    &__logo {
+        @include logo;
+    }
+
+    &__button {
+        @include copytext;
+        display: flex;
+        text-decoration: none;
+        background-color: $blue;
+        border-radius: 4px;
+        color: $white;
+        height: 3.5rem;
+        width: 10em;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.week {
+    width: 80%;
+
+    &__title {
+        @include sectionheader;
+        color: $darkblue;
+        margin-bottom: 1.2rem;
+        margin-top: 6rem;
+
+    }
+
 }
 
 .recent {
-    display: flex;
-}
-
-.about {
     width: 80%;
+
+    &__title {
+        @include sectionheader;
+        color: $darkblue;
+        margin-top: 8rem;
+        margin-bottom: 1.5rem;
+    }
 
     &__container {
         display: flex;
         justify-content: space-between;
     }
 
+    &__product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px $darkblue solid;
+        padding: 1.5rem;
+        width: 25rem;
+        height: 12rem;
+    }
+
+    &__name {
+        @include copytextbold;
+        color: $darkblue;
+        width: 100%;
+    }
+
+    &__company {
+        @include footertext;
+        color: $darkblue;
+        align-self: flex-end;
+    }
+
+    &__image {
+        height: 8rem;
+        width: 15rem;
+    }
+}
+
+.featured {
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+
+    &__title {
+        @include sectionheader;
+        color: $darkblue;
+        margin-top: 7rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__container {
+        display: flex;
+        margin-bottom: 3.5rem;
+        box-shadow: 1px 3px 5px $darkblue;
+        padding: 2rem 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px $darkblue solid;
+    }
+
+    &__info {
+        width: 60%;
+        color: $darkblue;
+        @include copytext;
+    }
+
+    &__logo {
+        @include logo;
+        @include boxheaderbold;
+    }
+
+    &__button {
+        @include copytext;
+        display: flex;
+        text-decoration: none;
+        background-color: $blue;
+        border-radius: 4px;
+        color: $white;
+        height: 3.5rem;
+        width: 10em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__load {
+        @include copytextbold;
+        align-self: center;
+        border: 1px $darkblue solid;
+        box-shadow: 1px 3px 5px $darkblue;
+        display: flex;
+        text-decoration: none;
+        background-color: $white;
+        border-radius: 4px;
+        color: $darkblue;
+        height: 3.5rem;
+        width: 10em;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.about {
+    width: 80%;
+
+    &__title {
+        @include sectionheader;
+        color: $darkblue;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__bork {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 18rem;
+    }
+
+    &__big {
+        font-size: 9rem;
+        font-family: 'Ribeye';
+        -webkit-text-stroke: 0.05px $green;
+        @include pageheader;
+        color: $darkblue;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bork {
+        width: 40%;
+        border: 2px $green solid;
+    }
+
     &__half {
         width: 40%;
-
+        margin-bottom: 6rem;
     }
 
     &__image {
         width: 100%;
     }
+    
+    &__inf {
+        @include copytext;
+    }
 
     &__info {
+        @include copytext;
         margin-top: 1rem;
+    }
+
+    &__logo {
+        @include logo;
+        @include boxheaderbold;
     }
 }

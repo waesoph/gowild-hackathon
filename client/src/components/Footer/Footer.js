@@ -5,8 +5,8 @@ import './Footer.scss'
 export default function Footer() {
     return (
         <div className="footer">
-            <p>Made with {'<3'} by WilD CATs</p>            
-            <p>(Tom, Aiza, Carol, Davi, Will)</p>            
+            <p className="footer__title">Made with {'<3'} by WilD CATs</p>            
+            <p className="footer__info">(Tom, Aiza, Carol, Davi, Will)</p>            
         </div>
     )
 }

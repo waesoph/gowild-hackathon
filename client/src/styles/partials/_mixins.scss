@@ -22,5 +22,56 @@
 
 //Logo 
 @mixin logo {
-    font-family: 'Ribeye';    
+    font-family: 'Ribeye';
+    -webkit-text-stroke: 0.05px $green;
+}
+
+//Typography
+@mixin pageheader {
+    font-size: 4rem;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+@mixin sectionheader {
+    font-size: 3rem;
+    line-height: 56.25px;
+    font-weight: 700
+}
+
+@mixin boxheaderbold {
+    font-size: 2rem;
+    line-height: 37.5px;
+    font-weight: 700;
+}
+
+@mixin boxheader {
+    font-size: 2rem;
+    line-height: 37.5px;
+    font-weight: 400;
+}
+
+@mixin copytextbold {
+    font-size: 1.5rem;
+    line-height: 28.13px;
+    font-weight: 700;
+}
+
+@mixin copytext {
+    font-size: 1.5rem;
+    line-height: 28.13px;
+    font-weight: 400;
+}
+
+@mixin copytextitalic {
+    font-size: 1.5rem;
+    line-height: 28.13px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@mixin footertext {
+    font-size: 1.125rem;
+    line-height: 21.09px;
+    font-weight: 400;
 }

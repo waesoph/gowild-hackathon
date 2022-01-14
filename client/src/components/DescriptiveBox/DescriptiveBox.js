@@ -37,24 +37,24 @@ export default class DescriptiveBox extends Component {
             <div className="dbox">
                 <div className="dbox__main">
                 <div className="dbox__top">
-                    <h2>{this.props.title}</h2>
-                    <p>{this.props.description}</p>
+                    <h2 className="dbox__title">{this.props.title}</h2>
+                    <p className="dbox__info">{this.props.description}</p>
                 </div>
                 <div className="dbox__container">
-                <div>
-                        <h3>{this.state.products[0].category}</h3>
+                    <div className="dbox__holder">
+                        <h3 className="dbox__category">{this.state.products[0].category}</h3>
                         <img className="dbox__image" src={this.state.products[0].image} alt={this.state.products[0].name}/>
-                        <h4>{this.state.products[0].name}</h4>
+                        <h4 className="dbox__name">{this.state.products[0].name}</h4>
                     </div>
-                    <div>
-                        <h3>{this.state.products[1].category}</h3>
+                    <div className="dbox__holder">
+                        <h3 className="dbox__category">{this.state.products[1].category}</h3>
                         <img className="dbox__image" src={this.state.products[1].image} alt={this.state.products[0].name}/>
-                        <h4>{this.state.products[1].name}</h4>
+                        <h4 className="dbox__name">{this.state.products[1].name}</h4>
                     </div>
-                    <div>
-                        <h3>{this.state.products[2].category}</h3>
+                    <div className="dbox__holder">
+                        <h3 className="dbox__category">{this.state.products[2].category}</h3>
                         <img className="dbox__image" src={this.state.products[2].image} alt={this.state.products[0].name}/>
-                        <h4>{this.state.products[2].name}</h4>
+                        <h4 className="dbox__name">{this.state.products[2].name}</h4>
                     </div>
                 </div>                    
                 </div>                
