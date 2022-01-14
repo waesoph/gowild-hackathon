@@ -19,13 +19,13 @@ class CustomizePage extends Component {
         this.setState({
           productData: res.data,
           foodCategory: res.data.filter(
-            (product) => product.category === "Food"
+            (product) => product.category === "Eat"
           ),
           drinkCategory: res.data.filter(
             (product) => product.category === "Drink"
           ),
           activityCategory: res.data.filter(
-            (product) => product.category === "Activity"
+            (product) => product.category === "Play"
           ),
         });
       })
@@ -73,12 +73,15 @@ class CustomizePage extends Component {
         <div>
           <div className="customize-container">
             <div className="customize-container__intro">
-              <h2 className="customize-container__title">Game Night Box</h2>
+              <h2 className="customize-container__title">
+                Your Customized Box
+              </h2>
               <p className="customize-container__details">
                 This fun-filled event box is a great tool to increase engagement
                 while building new work connections. A fun combination of food,
                 drink, and an online game. Nothing brings the group together
-                more than food and laughter! The team is going to Go Wild!
+                more than food and laughter! The team is going to
+                <span className="customize-logo">Go Wild</span>! !
               </p>
             </div>
 
@@ -86,7 +89,7 @@ class CustomizePage extends Component {
               <form className="customize-form" onSubmit={this.handleSubmit}>
                 <div className="customize-box">
                   <div className="customize-box__option">
-                    <label htmlFor="food">Food</label>
+                    <label htmlFor="food">Eat</label>
                     {this.state.selectedProduct.food && (
                       <div>
                         <div className="">
@@ -143,7 +146,7 @@ class CustomizePage extends Component {
                   </div>
 
                   <div className="customize-box__option">
-                    <label htmlFor="activity">Activity</label>
+                    <label htmlFor="activity">Play</label>
                     {this.state.selectedProduct.activity && (
                       <div>
                         <img

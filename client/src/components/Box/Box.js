@@ -52,7 +52,7 @@ export default class Box extends Component {
                     </div>
                     <div className="box__container">
                         <div className="box__holder">
-                            <h3 className="box__category">{this.state.products[0] ? this.state.products[0].category : 'Food'}</h3>
+                            <h3 className="box__category">{this.state.products[0] ? this.state.products[0].category : 'Eat'}</h3>
                             <img className="box__image" src={this.state.products[0] ? this.state.products[0].image : defaultImg } alt={this.state.products[0] ? this.state.products[0].image : ''}/>
                             <h4 className="box__name">{this.state.products[0] ? this.state.products[0].name : '?'}</h4>
                         </div>
@@ -62,7 +62,7 @@ export default class Box extends Component {
                             <h4 className="box__name">{this.state.products[1] ? this.state.products[1].name : '?'}</h4>
                         </div>
                         <div className="box__holder">
-                            <h3 className="box__category">{this.state.products[2] ? this.state.products[2].category : 'Activity'}</h3>
+                            <h3 className="box__category">{this.state.products[2] ? this.state.products[2].category : 'Play'}</h3>
                             <img className="box__image" src={this.state.products[2] ? this.state.products[2].image : defaultImg } alt={this.state.products[0] ? this.state.products[0].image : ''}/>
                             <h4 className="box__name">{this.state.products[2] ? this.state.products[2].name : '?'}</h4>
                         </div>
