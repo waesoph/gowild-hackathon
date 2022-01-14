@@ -143,7 +143,7 @@ class CustomizePage extends Component {
                   </div>
 
                   <div className="customize-box__option">
-                    <label htmlFor="activity">Activity</label>
+                    <label htmlFor="activity">Play</label>
                     {this.state.selectedProduct.activity && (
                       <div>
                         <img

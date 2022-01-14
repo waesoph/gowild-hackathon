@@ -35,7 +35,7 @@ class CheckoutPage extends Component {
           </div>
           <div className="final-box">
             <div className="final-box__info">
-              <h2 className="final-box__title">Game Night Box</h2>
+              <h2 className="final-box__title">Your Customized Box</h2>
               <p className="final-box__details">
                 This fun-filled event box is a great tool to increase engagement
                 while building new work connections. A fun combination of food,
@@ -78,7 +78,7 @@ class CheckoutPage extends Component {
               <div className="checkout-details__box">
                 <p className="checkout-details__order">Order #4265</p>
                 <div className="checkout-details__title">
-                  <p>Game Night Boxes</p>
+                  <p>Your Customized Boxes</p>
                   <p className="checkout-details__title--qty">32x</p>
                 </div>
                 <p className="checkout-details__price">C$10.99/each</p>
