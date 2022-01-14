@@ -25,7 +25,7 @@ class CustomizePage extends Component {
             (product) => product.category === "Drink"
           ),
           activityCategory: res.data.filter(
-            (product) => product.category === "activity"
+            (product) => product.category === "Activity"
           ),
         });
       })
@@ -58,6 +58,7 @@ class CustomizePage extends Component {
 
   render() {
     console.log(this.state.foodCategory[0]);
+    console.log(this.state.activityCategory);
 
     if (this.props.location.pathname === "/checkout") {
       return <CheckoutPage selectedProduct={this.state.selectedProduct} />;
