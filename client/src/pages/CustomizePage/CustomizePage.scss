@@ -23,6 +23,7 @@
   margin-bottom: 10rem;
   width: 80%;
   box-shadow: 1px 3px 5px $darkblue;
+  position: relative;
 
   &__intro {
     width: 50%;
@@ -63,8 +64,8 @@
 
 .customize-button {
   position: absolute;
-  top: 100%;
-  left: 45%;
+  top: 125%;
+  left: 40%;
   background-color: $blue;
   color: white;
   width: 15rem;
