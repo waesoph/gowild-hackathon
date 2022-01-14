@@ -1,0 +1,65 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/global" as *;
+@use "../../styles/partials/typography" as *;
+
+.customize-heading-box {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $darkblue;
+}
+
+.customize-container {
+  border: 1px $darkblue solid;
+  display: flex;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+  &__intro {
+    width: 50%;
+    //border: steelblue 1px solid;
+    margin: 2rem;
+  }
+  &__title {
+    margin-bottom: 0.5rem;
+    color: $darkblue;
+  }
+  &__details {
+    color: $darkblue;
+  }
+}
+
+.customize-box {
+  margin-top: 2rem;
+  display: flex;
+  //border: springgreen 1px solid;
+  //   margin-left: 5rem;
+  &__option {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    //justify-content: center;
+    align-items: center;
+  }
+}
+
+.customize-button-container {
+  display: flex;
+  //justify-content: center;
+}
+
+.customize-button {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  background-color: $darkblue;
+  color: white;
+  width: 12rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+}
