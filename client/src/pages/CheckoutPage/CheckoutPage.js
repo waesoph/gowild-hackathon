@@ -1,6 +1,7 @@
 //import React from "react";
 import "./CheckoutPage.scss";
 import checkoutImg from "../../assets/checkout.jpg";
+import smallBizImg from "../../assets/small-business.jpg";
 
 import React, { Component } from "react";
 
@@ -35,12 +36,13 @@ class CheckoutPage extends Component {
           </div>
           <div className="final-box">
             <div className="final-box__info">
-              <h2 className="final-box__title">Game Night Box</h2>
+              <h2 className="final-box__title">Your Customized Box</h2>
               <p className="final-box__details">
                 This fun-filled event box is a great tool to increase engagement
                 while building new work connections. A fun combination of food,
                 drink, and an online game. Nothing brings the group together
-                more than food and laughter! The team is going to Go Wild!
+                more than food and laughter! The team is going to{" "}
+                <span className="checkout-logo">Go Wild</span>!
               </p>
             </div>
             <div className="final-box__item">
@@ -78,7 +80,7 @@ class CheckoutPage extends Component {
               <div className="checkout-details__box">
                 <p className="checkout-details__order">Order #4265</p>
                 <div className="checkout-details__title">
-                  <p>Game Night Boxes</p>
+                  <p>Your Customized Boxes</p>
                   <p className="checkout-details__title--qty">32x</p>
                 </div>
                 <p className="checkout-details__price">C$10.99/each</p>
@@ -113,6 +115,10 @@ class CheckoutPage extends Component {
           {this.state.clicked ? (
             <div className="confrim-img-box">
               <img className="confrim-img-box__img" src={checkoutImg} />
+              <p className="confrim-img-box__text">
+                ... and also, you just supported a local business!
+              </p>
+              <img className="confrim-img-box__sm" src={smallBizImg} />
             </div>
           ) : null}
         </div>
