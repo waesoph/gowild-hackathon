@@ -8,12 +8,14 @@ import React, { Component } from "react";
 class CheckoutPage extends Component {
   state = {
     clicked: false,
+    confirmed: false,
   };
 
   handleClick = () => {
     console.log("hello");
     this.setState({
       clicked: true,
+      confirmed: true,
     });
     // this.moveWindow();
   };
@@ -109,7 +111,11 @@ class CheckoutPage extends Component {
           </div>
           <div className="button-box">
             <button className="button-box__button" onClick={this.handleClick}>
-              Confirm
+              {this.state.confirmed ? (
+                <span>Confirmed</span>
+              ) : (
+                <span>Confirm</span>
+              )}
             </button>
           </div>
           {this.state.clicked ? (
