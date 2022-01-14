@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
 
 // Media type
 @mixin tablet {
@@ -18,3 +19,8 @@
     margin-block-start: $margin-end;
     margin-block-end: $margin-end;
   }
+
+//Logo 
+@mixin logo {
+    font-family: 'Ribeye';    
+}

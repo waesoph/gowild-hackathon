@@ -5,6 +5,7 @@ import axios from "axios";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Select from "./pages/Select/Select";
+import Cart from "./pages/Cart/Cart";
 import Footer from "./components/Footer/Footer";
 
 import "./styles/global.scss";
@@ -15,7 +16,8 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={Home}/>
-        <Route path="/select" exact component={Select}/>
+        <Route path="/select" component={Select}/>
+        <Route path="/cart" component={Cart}/>
       </Switch>
       <Footer />
     </BrowserRouter>
